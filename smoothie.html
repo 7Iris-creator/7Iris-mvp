@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Crea il tuo Smoothie – 7Iris</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #fdeff4;
+            font-family: 'Georgia', serif;
+            color: #5a2a6d;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d2538c;
+        }
+        h2 {
+            color: #5a2a6d;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options button {
+            margin: 5px;
+            padding: 10px 18px;
+            font-size: 16px;
+            border: 2px solid #5a2a6d;
+            border-radius: 10px;
+            background-color: #fff;
+            color: #5a2a6d;
+            cursor: pointer;
+        }
+        .options button:hover {
+            background-color: #f7d5e5;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .text-area {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .image-area {
+            flex: 1;
+        }
+        .image-area img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-area">
+            <h1>Crea il tuo Smoothie</h1>
+            <p>Rispondi alle domande e crea il tuo smoothie personalizzato!</p>
+
+            <div class="question">
+                <h2>Qual è il tuo colore preferito?</h2>
+                <div class="options">
+                    <button>Giallo</button>
+                    <button>Rosa</button>
+                    <button>Viola</button>
+                    <button>Verde</button>
+                    <button>Blu</button>
+                    <button>Altro</button>
+                </div>
+            </div>
+        </div>
+        <div class="image-area">
+            <img src="img/smoothie_intro.jpg" alt="Smoothie colorato">
+        </div>
+    </div>
+</body>
+</html>
