@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Bouquet – 7Iris</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="bouquet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>💐 Regala un Bouquet</h1>
+    <p class="sottotitolo">Rispondi al quiz per scoprire la composizione floreale perfetta!</p>
+  </header>
+
+  <main>
+    <form id="quiz-fiori">
+      <div class="domanda">
+        <p>1. Per quale occasione è il bouquet?</p>
+        <label><input type="radio" name="q1" value="amore"> Un gesto romantico</label><br>
+        <label><input type="radio" name="q1" value="compleanno"> Un compleanno</label><br>
+        <label><input type="radio" name="q1" value="grazie"> Un ringraziamento</label>
+      </div>
+
+      <div class="domanda">
+        <p>2. Qual è il colore preferito della persona?</p>
+        <label><input type="radio" name="q2" value="rosa"> Rosa</label><br>
+        <label><input type="radio" name="q2" value="giallo"> Giallo</label><br>
+        <label><input type="radio" name="q2" value="bianco"> Bianco</label>
+      </div>
+
+      <div class="domanda">
+        <p>3. Che tipo di personalità ha?</p>
+        <label><input type="radio" name="q3" value="dolce"> Dolce e sensibile</label><br>
+        <label><input type="radio" name="q3" value="solare"> Solare e vivace</label><br>
+        <label><input type="radio" name="q3" value="raffinata"> Elegante e riservata</label>
+      </div>
+
+      <button type="submit" class="bottone">Scopri il Bouquet</button>
+    </form>
+
+    <div id="risultato-bouquet" style="margin-top: 30px; font-weight: bold;"></div>
+    <a href="index.html" class="bottone">Torna alla Home</a>
+  </main>
+</body>
+</html>

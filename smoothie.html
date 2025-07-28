@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Smoothie – 7Iris</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="smoothie.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🍓 Crea il tuo Smoothie</h1>
+    <p class="sottotitolo">Rispondi a poche domande per scoprire la bevanda perfetta per te!</p>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+      <div class="domanda">
+        <p>1. Che tipo di energia vuoi oggi?</p>
+        <label><input type="radio" name="q1" value="fresco"> Fresca e dissetante</label><br>
+        <label><input type="radio" name="q1" value="dolce"> Dolce e coccolosa</label><br>
+        <label><input type="radio" name="q1" value="vitale"> Energizzante e fruttata</label>
+      </div>
+
+      <div class="domanda">
+        <p>2. Quale colore ti ispira di più?</p>
+        <label><input type="radio" name="q2" value="rosa"> Rosa</label><br>
+        <label><input type="radio" name="q2" value="viola"> Viola</label><br>
+        <label><input type="radio" name="q2" value="giallo"> Giallo</label>
+      </div>
+
+      <div class="domanda">
+        <p>3. Che profumo preferisci?</p>
+        <label><input type="radio" name="q3" value="cocco"> Cocco</label><br>
+        <label><input type="radio" name="q3" value="mirtillo"> Mirtillo</label><br>
+        <label><input type="radio" name="q3" value="ananas"> Ananas</label>
+      </div>
+
+      <button type="submit" class="bottone">Scopri il tuo Smoothie</button>
+    </form>
+
+    <div id="risultato" style="margin-top: 30px; font-weight: bold;"></div>
+    <a href="index.html" class="bottone">Torna alla Home</a>
+  </main>
+</body>
+</html>
