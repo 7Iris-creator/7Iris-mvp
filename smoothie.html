@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Crea il tuo Smoothie – 7Iris</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="smoothie.js"></script>
     <style>
         body {
             background-color: #fdeff4;
@@ -19,30 +20,30 @@
         h2 {
             color: #5a2a6d;
         }
-        .question {
+        .domanda {
             margin: 20px 0;
         }
-        .options button {
-            margin: 5px;
+        .bottone {
+            margin-top: 20px;
             padding: 10px 18px;
             font-size: 16px;
-            border: 2px solid #5a2a6d;
+            border: none;
             border-radius: 10px;
-            background-color: #fff;
+            background-color: #f7d5e5;
             color: #5a2a6d;
             cursor: pointer;
         }
-        .options button:hover {
-            background-color: #f7d5e5;
+        .bottone:hover {
+            background-color: #f2b6ce;
         }
         .container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             max-width: 960px;
             margin: 0 auto;
         }
-        .text-area {
+        .form-area {
             flex: 1;
             padding-right: 40px;
         }
@@ -57,24 +58,38 @@
 </head>
 <body>
     <div class="container">
-        <div class="text-area">
-            <h1>Crea il tuo Smoothie</h1>
-            <p>Rispondi alle domande e crea il tuo smoothie personalizzato!</p>
-
-            <div class="question">
-                <h2>Qual è il tuo colore preferito?</h2>
-                <div class="options">
-                    <button>Giallo</button>
-                    <button>Rosa</button>
-                    <button>Viola</button>
-                    <button>Verde</button>
-                    <button>Blu</button>
-                    <button>Altro</button>
+        <div class="form-area">
+            <h1>🍹 Crea il tuo Smoothie</h1>
+            <form id="quiz-form">
+                <div class="domanda">
+                    <p>1. Che tipo di energia cerchi oggi?</p>
+                    <label><input type="radio" name="q1" value="fresca"> Fresca e leggera</label><br>
+                    <label><input type="radio" name="q1" value="dolce"> Dolce e rilassante</label><br>
+                    <label><input type="radio" name="q1" value="vitale"> Vitale e concentrata</label><br>
+                    <label><input type="radio" name="q1" value="altro"> Altro: <input type="text" name="q1_altro" placeholder="Scrivi qui..."></label>
                 </div>
-            </div>
+                <div class="domanda">
+                    <p>2. Qual è il colore che senti più tuo oggi?</p>
+                    <label><input type="radio" name="q2" value="rosa"> Rosa</label><br>
+                    <label><input type="radio" name="q2" value="giallo"> Giallo</label><br>
+                    <label><input type="radio" name="q2" value="verde"> Verde</label><br>
+                    <label><input type="radio" name="q2" value="viola"> Viola</label><br>
+                    <label><input type="radio" name="q2" value="altro"> Altro: <input type="text" name="q2_altro" placeholder="Scrivi qui..."></label>
+                </div>
+                <div class="domanda">
+                    <p>3. Che effetto desideri?</p>
+                    <label><input type="radio" name="q4" value="detox"> Detox e drenante</label><br>
+                    <label><input type="radio" name="q4" value="energia"> Energizzante</label><br>
+                    <label><input type="radio" name="q4" value="anti_stress"> Anti-stress</label><br>
+                    <label><input type="radio" name="q4" value="nutriente"> Nutriente e ricostituente</label><br>
+                    <label><input type="radio" name="q4" value="altro"> Altro: <input type="text" name="q4_altro" placeholder="Scrivi qui..."></label>
+                </div>
+                <button type="submit" class="bottone">Scopri il tuo Smoothie</button>
+            </form>
+            <div id="risultato"></div>
         </div>
         <div class="image-area">
-            <img src="img/smoothie_intro.jpg" alt="Smoothie colorato">
+            <img src="img/smoothie_intro.jpg" alt="Smoothie">
         </div>
     </div>
 </body>
